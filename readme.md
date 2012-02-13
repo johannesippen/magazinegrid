@@ -15,50 +15,50 @@ To use magazine grid, you need to include only CSS File. It's highly recommended
 
 ## HTML
 
-<article>
+	<article>
 Will be the wrapper for the page. Be aware that all other features of magazine grid will only work inside an article-element
 
-<nav class="pagina">
+	<nav class="pagina">
 Put this as the first element inside the <article>. Will format as a Pagination, possibly to put the category or page number.
 
-<section>
+	<section>
 Defines a new "row" of elements. 
 
-<p class="grid x1">
+	<p class="grid x1">
 Defines an element inside the grid which is one column wide. Feel free to use every semantic element you like.
 Following classes are possible:
 	
-	"grid" - makes the element a part of the grid
-	"x1-8" - defines the width of the element. Can be between one and eight columns wide
-	"indent1-7" - pushes an element one column to the right. Can be between one and seven.
+- "grid" - makes the element a part of the grid
+- "x1-8" - defines the width of the element. Can be between one and eight columns wide
+- "indent1-7" - pushes an element one column to the right. Can be between one and seven.
 
-<section class="gutter">
+	<section class="gutter">
 Defines an element with a nice gutter to enhance rich text formatting. Following classes are possible:
 
-	"gutter" - sets a gutter of 0.5 columns on both sides of page
-	"column2" - formats the text in 2 columns
-	"column3" - formats the text in 3 columns
-	"column2 border" - formats the text in 2 columns, justified & with a thin border between the gaps
-	"column3 border" - formats the text in 3 columns, justified & with a thin border between the gaps
+- "gutter" - sets a gutter of 0.5 columns on both sides of page
+- "column2" - formats the text in 2 columns
+- "column3" - formats the text in 3 columns
+- "column2 border" - formats the text in 2 columns, justified & with a thin border between the gaps
+- "column3 border" - formats the text in 3 columns, justified & with a thin border between the gaps
 	
-## Example HTML
+### Example HTML
 
-<article>
-	<nav class="pagina</strong>">…</nav>
-		<section>
-			<p class="grid x4">
-				Paragraph Element, 4 columns wide
-			</p>
-			<p class="grid x2 indent1">
-				Paragraph Element, 2 columns wide, pushed 1 column to the right
-			</p>
-			<h1 class="grid x1">
-				Headline Element, 1 column wide
-			</h1>
-		</section>
-		<section class="gutter column2">
-			<p>
-				Text running in 2 columns with gutter left/right of 0.5 grid columns
-			</p>
-		</section>
-</article>
+	<article>
+		<nav class="pagina</strong>">…</nav>
+			<section>
+				<p class="grid x4">
+					Paragraph Element, 4 columns wide
+				</p>
+				<p class="grid x2 indent1">
+					Paragraph Element, 2 columns wide, pushed 1 column to the right
+				</p>
+				<h1 class="grid x1">
+					Headline Element, 1 column wide
+				</h1>
+			</section>
+			<section class="gutter column2">
+				<p>
+					Text running in 2 columns with gutter left/right of 0.5 grid columns
+				</p>
+			</section>
+	</article>
