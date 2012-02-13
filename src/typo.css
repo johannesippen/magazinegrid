@@ -1,0 +1,98 @@
+.grid {
+	line-height: 22px;
+}
+.gutter {
+	line-height: 22px;
+}
+.column3 {
+	line-height: 1px;/* BUGFIX */
+}
+strong {
+	color: #000;
+}
+p {
+	color: #222;
+	font: 16px/22px Helvetica;
+/* text-indent: 10px;*/
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+section p:first-of-type {
+	text-indent: 0px;
+}
+/*section p:first-of-type:first-letter {
+   color: #f20;
+   float: left;
+   font: bold 44px/44px Helvetica;
+   margin-right: 5px;
+}
+*/li {
+	color: #222;
+	font: 16px/22px Helvetica;
+	list-style: square;
+	margin-left: 20px;
+}
+section a {
+	display: inline-block;
+	text-indent: 0px;
+	background: rgba(0,0,0,.6);
+	padding: 2px 7px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 1px 1px #000;
+	border-radius: 5px;
+}
+hr {
+	margin-bottom: 22px;
+}
+h1 {
+	margin-bottom: 22px;
+	padding-bottom: 0;
+	font: bold 36px/44px Helvetica;
+	letter-spacing: -2px;
+	color: #999;
+}
+h2 {
+	font: normal 22px/22px Helvetica;
+	color: #666;
+}
+p + h2 {
+	margin-top: 22px;
+}
+h3 {
+	font: bold 18px/22px Helvetica;
+	color: #333;
+	padding: 11px 0;
+}
+h4 {
+	font: bold 16px/22px Helvetica;
+	color: #111;
+	padding: 22px 0 0 0;
+}
+h5 {
+	font: bold 16px/22px Helvetica;
+	color: #000;
+}
+h6 {
+	font: normal 16px/22px Helvetica;
+	color: #666;
+}
+blockquote {
+	font: bold 24px/22px Helvetica;
+	color: #000;
+	border-top: 6px solid #111;
+	margin-top: 16px;
+	padding: 5px 0 39px 0;
+}
+aside {
+	background: #ddd;
+	padding: 11px 18px;
+	margin: 11px 0;
+	border-radius: 2px;
+}
+aside p,aside li {
+	color: #fff!important;
+	font-size: 13px;
+}

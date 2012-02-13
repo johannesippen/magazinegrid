@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Magazine Grid</title>
+	<!-- Dev Styles -->
+	<link rel="stylesheet" href="src/reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="src/grid.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="src/typo.css" type="text/css" media="screen" charset="utf-8">
+	<!-- Individual Styles -->
+	<style type="text/css" media="screen">
+		article {
+			height: 1004px;
+		}
+		.grid {
+			height: 382px;
+		}
+		@media screen and (min-width: 768px) {
+			.grid {
+//				height: 162px;
+			}	
+		}
+		.column3 {
+			line-height: 20px;
+			text-align: justify;
+		}
+		h2 {
+			color: #f20;
+		}
+		#image1 { background: url(img/egypt/x4.jpg) no-repeat left center;}
+		#image2 { background: url(img/egypt/x3.jpg) no-repeat center;}
+		#image3 { background: url(img/egypt/x5.jpg) no-repeat right top; -webkit-background-size: 600% 200%;}
+		#image4 { background: url(img/egypt/x2.jpg) no-repeat center -150px;}
+		#image5 { background: url(img/egypt/x5.jpg) no-repeat center bottom;}
+	</style>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0;">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	
+</head>
+<body>
+<article>
+	<section>
+		<div class="grid x4" id="image1">&nbsp;</div>
+		<div class="grid x3" id="image2">&nbsp;</div>
+		<div class="grid x1" id="image3">&nbsp;</div>
+	</section>
+	<section class="gutter column3">
+<p><strong>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet,</strong> ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis facilisis.</p>
+	</section>
+	<section>
+		<div class="grid x3" id="image4">&nbsp;</div>
+		<div class="grid x5" id="image5">&nbsp;</div>
+	</section> 
+</article>
+</body>
+</html>

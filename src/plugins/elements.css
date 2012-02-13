@@ -1,0 +1,45 @@
+/* Pagina */
+nav.pagina {
+		position: absolute;
+		margin-top: -50px;
+		background: #f20;
+		border-radius: 2px;
+		-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.2) inset,0 0 5px rgba(0,0,0,0.4);
+		text-align: center;
+		color: #fff;
+		font: bold 20px/50px Helvetica;
+		text-shadow: 0 1px 1px #000;
+}
+@media only screen and (max-width: 767px) {
+	display: none;
+}
+@media only screen and (min-width: 768px) {
+	nav.pagina {
+		width: 82px;
+		margin-left: 588px;
+		padding-top: 100px;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	nav.pagina {
+		width: 114px;
+		margin-left: 780px;
+		padding-top: 80px;
+	}
+}
+/* Footer */
+footer {
+	text-align: center;
+}
+footer li {
+	background: rgba(0,0,0,.2);
+	display: inline-block;
+	text-indent: -10000px;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	margin: 0 5px 44px 5px;
+}
+footer li.current {
+	background: rgba(0,0,0,.8);
+}
