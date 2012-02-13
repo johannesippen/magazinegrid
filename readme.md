@@ -19,7 +19,7 @@ To use magazine grid, you need to include only CSS File. It's highly recommended
 Will be the wrapper for the page. Be aware that all other features of magazine grid will only work inside an article-element
 
 	<nav class="pagina">
-Put this as the first element inside the <article>. Will format as a Pagination, possibly to put the category or page number.
+Put this as the first element inside the ´<article>´. Will format as a Pagination, possibly to put the category or page number.
 
 	<section>
 Defines a new "row" of elements. 
@@ -28,18 +28,20 @@ Defines a new "row" of elements.
 Defines an element inside the grid which is one column wide. Feel free to use every semantic element you like.
 Following classes are possible:
 	
-- "grid" - makes the element a part of the grid
-- "x1-8" - defines the width of the element. Can be between one and eight columns wide
-- "indent1-7" - pushes an element one column to the right. Can be between one and seven.
+- ´grid´ - makes the element a part of the grid
+- ´x1-8´ - defines the width of the element. Can be between one and eight columns wide
+- ´indent1-7´ - pushes an element one column to the right. Can be between one and seven.
+
+### Typography
 
 	<section class="gutter">
 Defines an element with a nice gutter to enhance rich text formatting. Following classes are possible:
 
-- "gutter" - sets a gutter of 0.5 columns on both sides of page
-- "column2" - formats the text in 2 columns
-- "column3" - formats the text in 3 columns
-- "column2 border" - formats the text in 2 columns, justified & with a thin border between the gaps
-- "column3 border" - formats the text in 3 columns, justified & with a thin border between the gaps
+- ´gutter´ - sets a gutter of 0.5 columns on both sides of page
+- ´column2´ - formats the text in 2 columns
+- ´column3´ - formats the text in 3 columns
+- ´column2 border´ - formats the text in 2 columns, justified & with a thin border between the gaps
+- ´column3 border´ - formats the text in 3 columns, justified & with a thin border between the gaps
 	
 ### Example HTML
 
