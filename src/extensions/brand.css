@@ -1,0 +1,13 @@
+/* Brand */
+nav.brand {
+  display: block;
+  position: fixed;
+  top: 14px;
+  right: 22px;
+  height: 44px;
+  width: 44px;
+  background: #222;
+  color: #ddd;
+  text-align: center;
+  line-height: 44px;
+}

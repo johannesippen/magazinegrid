@@ -1,0 +1,16 @@
+/* Pagination */
+footer {
+  text-align: center;
+}
+footer li {
+  background: rgba(0,0,0,.2);
+  display: inline-block;
+  text-indent: -10000px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 5px 44px 5px;
+}
+footer li.current {
+  background: rgba(0,0,0,.8);
+}

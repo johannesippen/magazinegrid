@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MagazineGrid</title>
+  <link rel="stylesheet" href="magazinegrid.min.css">
+  <link rel="stylesheet" href="src/extensions/simple-forms.css">
+  <!-- Individual Styles -->
+  <style type="text/css" media="screen">
+    @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700);
+    h1, 
+    h2, 
+    p,
+    input,
+    input[type=email],
+    a,
+    b,
+    button,
+    small {
+      font-family: "Source Sans Pro", sans-serif;
+    }
+    p,
+    input,
+    a,
+    small {
+      font-weight: 300;
+    }
+    p {
+      font-size: 20px;
+      line-height: 33px;
+    }
+    .grid.x2 p {      
+      font-size: 18px;
+      line-height: 28px;
+    }
+    h1,
+    h2 {
+      letter-spacing: 0;
+    }
+    .showgrid {
+      height: 100px;
+      background: #ddd;
+      color: #fff;
+    }
+    h1,
+    h1 b {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .full .opener h1 {
+      padding: 0;
+    }
+    .full {
+      padding: 66px 0 110px;
+      text-align: center;
+    }
+    .full:nth-child(1) {
+      padding: 0;
+      background: url(img/grid/header.jpg) no-repeat center bottom;
+      background-size: cover;
+      text-shadow: 0 1px 1px #000;
+    }
+    h2 {
+      margin-bottom: 11px;
+    }
+    p.teaser {
+      font-size: 30px;
+      line-height: 44px;
+      margin-bottom: 11px;
+    }
+    .grid p {
+      margin-right: 10px;
+    }
+    .story {
+      padding-bottom: 44px;
+    }
+    img.code {
+      box-shadow: 0 2px 12px #ddd;
+    }
+    pre {
+      font-family: "Ubuntu Mono", monospace;
+      font-size: 12px;
+      background: #f7f7f7;
+      padding: 11px 8px;
+      border: 1px solid #eee;
+      overflow: scroll;
+      text-align: left!important;
+      margin-bottom: 44px;
+    }
+    @media screen and (max-width: 1023px) {
+      pre {
+        font-size: 11px;
+        line-height: 18px;
+      }
+    }
+    .grid.x2 {
+      text-align: center;
+    }
+    img.icon {
+      width: 100px;
+      margin: 0 auto 22px;
+      opacity: .6;
+    }
+    .story p {
+      margin-bottom: 11px;
+    }
+    .ipad-preview {
+      background: url(img/grid/ipad-air-white-portrait.png) no-repeat center top;
+      background-size: 871px 357px;
+      padding-top: 106px;
+      padding-right: 1px;
+      padding-bottom: 90px;
+    }
+    a img {
+      border: 1px solid #ccc;
+    }
+    a:hover img {
+      border: 1px solid #abc;
+    }
+    .full.interlude {
+      background: #e74c3c;
+    }
+    .interlude h1 {
+      color: #fff;
+      opacity: .7;
+    }
+    .interlude h1 b {
+      color: #000;
+      opacity: .7;
+      display: block;
+    }
+    a.btn {
+      background: #27ae60;
+    }
+    button {
+      background: #34495e;
+    }
+    button img {
+      max-height: 30px;
+      max-width: 30px!important;
+    }
+    .full.checkout {
+      background: #2c3e50;
+    }
+    .checkout p {
+      color: #fff;
+    }
+    .checkout a {
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+    }
+    @media screen and (min-width: 1030px) {
+      .ipad-preview {
+        background: url(img/grid/ipad-air-white-landscape.png) no-repeat center top;
+        background-size: 1241px 236px;
+        padding-top: 51px;
+        padding-right: 0px;
+        padding-left: 5px;
+        padding-bottom: 50px;
+      }
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1029px) {
+      .ipad-preview {
+        background: none;
+        padding-top: 51px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 90px;
+      }
+    }
+    @media screen and (max-width: 769px) {
+      .ipad-preview {
+        background: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .ipad-preview {
+        display: none;
+      }
+      img.icon {
+        margin: 22px auto 0;
+      }
+      img.code {
+        box-shadow: none;
+        outline: 1px solid #ddd;
+      }
+      a img {
+        width: 300px;
+        margin-bottom: 22px;
+      }
+      section.full .opener {
+        padding-bottom: 33px;
+      }
+      p,
+      .opener p,
+      .grid.x2 p { 
+        line-height: 22px;
+        font-size: 16px;
+      }
+      .grid.x2 p,
+      .full p,
+      a.btn,
+      input {
+        margin-left: 15px!important;
+        margin-right: 15px;
+      }
+      h1 {
+        font-size: 32px;
+        line-height: 44px;
+      }
+      p.teaser {
+        font-size: 24px;
+        line-height: 33px;
+      }
+      .story {
+        padding-bottom: 11px;
+      }
+      .interlude {
+        margin-bottom: 66px;
+      }
+    }
+    .story + .grid {
+      margin-left: 0;
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0;">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+</head>
+<body>
+<article>
+  <section class="full">
+    <div class="opener">
+      <h1>MagazineGrid Framework</h1>
+      <p>Tell Your Story - in the Best Layout</p>
+    </div>
+  </section>
+  <section>
+    <div class="story">
+      <p class="teaser">MagazineGrid is a free CSS framework, designed to create amazing story layouts for the web.</p>
+      <p>Create an amazing article like on Medium, Exposure or Storehouse. Create a complete iPad magazine like the Aside Mag. Create a product landing page or a portfolio. Whatever story you want to tell, MagazineGrid helps you to set it right.</p>
+      <p>MagazineGrid comes without the clutter. It concentrates on what it does best: provide a good grid. Load more elements like buttons, forms, tables etc. as extensions.</p>
+    </div>
+  </section>
+  <section>
+    <div class="grid x2 indent1">
+      <img src="img/grid/tablet56.svg" class="icon">
+      <h2>Made for the iPad</h2>
+      <p>MagazineGrid works best on the iPad in portrait and landscape orientation. The simple 8 column grid uses the full display without leaving unnecessary margins.</p>    
+    </div>
+    </div>
+    <div class="grid x2">
+      <img src="img/grid/checkmark4.svg" class="icon">
+      <h2>Phone &amp; Desktop</h2>
+      <p>No iPad? No Problem! MagazineGrid is responsive to work on bigger displays as well as on iPhone, Android or Windows Phone. </p>
+    </div>
+    <div class="grid x2">
+      <img src="img/grid/leaf37.svg" class="icon">
+      <h2>Lighter than 4kB</h2>
+      <p>MagazineGrid is superlight to load fast on mobile devices. How we do it? Easy: No needless elements, no jurassic browser support.</p>
+    </div>
+  </section>
+  <hr>
+  <div class="ipad-preview">
+    <section>
+      <div class="grid x1 showgrid">1</div>
+      <div class="grid x1 showgrid">2</div>
+      <div class="grid x1 showgrid">3</div>
+      <div class="grid x1 showgrid">4</div>
+      <div class="grid x1 showgrid">5</div>
+      <div class="grid x1 showgrid">6</div>
+      <div class="grid x1 showgrid">7</div>
+      <div class="grid x1 showgrid">8</div>
+    </section>
+  </div>
+  <section>
+    <div class="story">
+      <h1>More Semantics, <br>Less Divs</h1>
+      <p>MagazineGrid uses semantic HTML5-elements to structure your magazine page.</p>
+      <p>An article-element wraps up your page, sections define the portions of content. Inside the sections you define which elements should match the grid and how wide they are.</p>
+      <p>Check out the following sample code for a typical story page:</p>
+    </div>
+  </section>
+  <section>
+    <div class="grid x3 indent1"><img src="img/grid/all-elements.png" class="code"></div>
+    <div class="grid x3">
+      <pre>
+&lt;article&gt;
+  &lt;section class="full"&gt;
+    &lt;div class="opener"&gt;
+      &lt;h1&gt;&hellip;&lt;/h1&gt;
+      &lt;p&gt;&hellip;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="story"&gt;
+      &lt;p&gt;&hellip;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="grid x2 indent1"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+    &lt;div class="grid x2"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+    &lt;div class="grid x2"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="grid x4 indent1"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+    &lt;div class="grid x2"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="story"&gt;
+      &lt;h2&gt;&hellip;&lt;/h2&gt;
+      &lt;p&gt;&hellip;&lt;/p&gt;
+      &lt;hr&gt;
+      &lt;blockquote&gt;&hellip;&lt;/blockquote&gt;
+      &lt;p&gt;&hellip;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="grid x6 indent1"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section class="full"&gt;
+    &lt;img src="&hellip;"&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="grid x3 indent1"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+    &lt;div class="grid x3"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="grid x4"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+    &lt;div class="grid x4"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="story column2 border"&gt;
+      &lt;p&gt;&hellip;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="grid x3 indent1"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+    &lt;div class="grid x3"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="story column3"&gt;
+      &lt;p&gt;&hellip;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;div class="grid x4"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+    &lt;div class="grid x4"&gt;&lt;img src="&hellip;"&gt;&lt;/div&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+      </pre>
+    </div>
+  </section>
+  <section class="full interlude">
+    <h1><b>Made for the iPad,</b> works like a charm on Phone and Desktop</h1>
+  </section>
+  <section>
+    <div class="story">
+      <h1>Examples</h1>
+    </div>
+    <div class="grid x3 indent1"><a href="./example.images.html"><img src="img/grid/example_egypt.png"></a></div>
+    <div class="grid x3"><a href="./example.moscow.html"><img src="img/grid/example_moscow.png"></a></div>
+  </section>
+  <hr>
+  <section>
+    <div class="story">
+      <h1>Plugins.</h1>
+      <p>Need more Styles? Load extra elements as extensions from Github. Watch this space - we will add more extensions soon. Leave your email to get notified - don't miss it!</p>
+    </div>
+    <div class="grid x2 indent1"><a href="https://github.com/johannesippen/magazinegrid/tree/master/src/extensions"><img src="img/grid/extension_pagination.png"></a></div>
+    <div class="grid x2"><a href="https://github.com/johannesippen/magazinegrid/tree/master/src/extensions"><img src="img/grid/extension_pagina.png"></a></div>
+    <div class="grid x2"><a href="https://github.com/johannesippen/magazinegrid/tree/master/src/extensions"><img src="img/grid/extension_brand.png"></a></div>
+  </section>
+  <hr>
+  <section>
+    <div class="story">
+      <h1>Get Started</h1>
+    </div>
+    <div class="grid x3 indent1">
+      <a href="http://cl.ly/0Z3Z030d1h0O" class="btn">Download</a><a href="https://github.com/johannesippen/magazinegrid/" class="btn">Github</a><small>It's FREE! Some Rights reserved. Examples included.</small>
+    </div>
+    <div class="grid x3">
+      <form action="http://thanksalot.us3.list-manage.com/subscribe/post?u=830819cae8586f7478973cdf8&amp;id=fb74f80b31" method="post" class="subscribe">
+        <input type="email" value="" name="EMAIL" placeholder="Enter your Email" required><button type="submit"><img src="img/grid/send.svg"></button>
+        <!-- input type="text" name="b_830819cae8586f7478973cdf8_e14c8a0511" style="position: absolute; left: -5000px;"-->
+      </form>
+      <small>Stay up to date about MagazineGrid. <br>We will not give your Email away. Promised.</small>
+    </div>
+  </section>
+  <section class="full checkout">
+    <p>MagazineGrid is a project by <a href="http://johannesippen.com">Johannes Ippen</a> at <a href="http://thxalot.co">Thanksalot</a></p>
+    <p>Made in Berlin</p>
+    <p>2014</p>
+  </section>
+</article>
+</body>
+</html>

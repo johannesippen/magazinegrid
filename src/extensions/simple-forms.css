@@ -1,0 +1,86 @@
+button,
+a.btn {
+  display: inline-block;
+  padding: 0 44px;
+  height: 44px;
+  margin: 0;
+  color: #fff;
+  background: #04c;
+  border: none;
+  text-decoration: none;
+  font: normal 18px/44px sans-serif;
+}
+button:hover,
+a.btn:hover {
+  background: #06c;
+  cursor: pointer;
+}
+button + button,
+a.btn + a.btn {
+  margin-left: 8px;
+}
+input[type=text],
+input[type=email] {
+  display: inline-block;
+  padding: 0 8px 0 16px;
+  height: 42px;
+  margin: 0;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  font: normal 18px/44px sans-serif;
+}
+.subscribe {
+  display: -webkit-box;
+  max-width: 100%;
+}
+.subscribe input {
+  border-right-width: 0;
+  -webkit-box-flex: 1;
+}
+.subscribe button {
+  padding: 0 16px;
+  -webkit-box-flex: 1;
+}
+a.btn + small,
+button + small,
+form + small {
+  font-size: 13px;
+  display: block;
+  padding: 11px 0 33px;
+}
+@media screen and (max-width: 1024px) {
+  button,
+  a.btn {
+    display: block;
+    margin: 11px 16px 0 0;
+    text-align: center;
+  }
+  button + button,
+  a.btn + a.btn {
+    margin-left: 0;
+  }
+  input[type=text],
+  input[type=email] {
+    display: block;
+    margin: 11px 0 0 0;
+  }
+  .subscribe input {
+    border-right-width: 1px;
+  }
+  .subscribe button {
+    padding: 0 16px;  
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe {
+    border-left: 0;
+    padding-left: 0;
+  }
+  .subscribe input {
+    float: none;
+    border-right-width: 1px;
+  }
+  .subscribe button {
+    padding: 0 16px;  
+  }
+}
