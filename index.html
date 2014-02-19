@@ -28,6 +28,9 @@
     p {
       font-size: 20px;
       line-height: 33px;
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      hyphens: none;
     }
     .grid.x2 p {      
       font-size: 18px;
@@ -46,6 +49,12 @@
     h1 b {
       text-align: center;
       color: #2c3e50;
+    }
+    p a,
+    small a {
+      color: #2c3e50;
+      text-decoration: none;
+      border-bottom: 1px solid #2c3e50;
     }
     .full .opener h1 {
       padding: 0;
@@ -194,13 +203,15 @@
         margin-bottom: 22px;
       }
       section.full .opener {
-        padding-bottom: 33px;
+        padding-bottom: 11px;
       }
       p,
-      .opener p,
       .grid.x2 p { 
         line-height: 22px;
         font-size: 16px;
+      }
+      .opener p {
+        display: none;
       }
       .grid.x2 p,
       .full p,
@@ -211,7 +222,7 @@
       }
       h1 {
         font-size: 32px;
-        line-height: 44px;
+        line-height: 33px;
       }
       p.teaser {
         font-size: 24px;
@@ -232,6 +243,23 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="MagazineGrid is a free CSS framework, designed to create amazing story layouts for the web.">
+  <link rel="author" href="https://plus.google.com/108515102883935248338"/>
+  <link rel="publisher" href="https://plus.google.com/108515102883935248338"/>
+  <!-- Facebook -->
+  <meta property="og:title" content="MagazineGrid" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://thxalot.co/grid/" />
+  <meta property="og:image" content="http://thxalot.co/grid/img/grid/header.jpg" />
+  <meta property="og:description" content="MagazineGrid is a free CSS framework, designed to create amazing story layouts for the web." />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="fb:admins" content="781190348"/>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="http://thxalot.co/grid/">
+  <meta property="twitter:title" content="MagazineGrid" />
+  <meta property="twitter:image" content="http://thxalot.co/grid/img/grid/header.jpg" />
+  <meta property="twitter:description" content="MagazineGrid is a free CSS framework, designed to create amazing story layouts for the web." />
 </head>
 <body>
 <article>
@@ -244,7 +272,7 @@
   <section>
     <div class="story">
       <p class="teaser">MagazineGrid is a free CSS framework, designed to create amazing story layouts for the web.</p>
-      <p>Create an amazing article like on Medium, Exposure or Storehouse. Create a complete iPad magazine like the Aside Mag. Create a product landing page or a portfolio. Whatever story you want to tell, MagazineGrid helps you to set it right.</p>
+      <p>Create an amazing article like on <a href="http://medium.com/">Medium</a>, <a href="https://jippen.exposure.so/moscow">Exposure</a> or <a href="https://www.storehouse.co/stories/t9sr-moscow">Storehouse</a>. Create a complete iPad magazine like the <a href="http://asidemag.com/">Aside Mag</a>. Create a product landing page or a portfolio. Whatever story you want to tell, MagazineGrid helps you to set it right.</p>
       <p>MagazineGrid comes without the clutter. It concentrates on what it does best: provide a good grid. Load more elements like buttons, forms, tables etc. as extensions.</p>
     </div>
   </section>
@@ -358,19 +386,19 @@
     </div>
   </section>
   <section class="full interlude">
-    <h1><b>Made for the iPad,</b> works like a charm on Phone and Desktop</h1>
+    <h1><b>Made for the iPad,</b> Works Like a Charm on Phone and Desktop</h1>
   </section>
   <section>
     <div class="story">
       <h1>Examples</h1>
     </div>
-    <div class="grid x3 indent1"><a href="./example.images.html"><img src="img/grid/example_egypt.png"></a></div>
-    <div class="grid x3"><a href="./example.moscow.html"><img src="img/grid/example_moscow.png"></a></div>
+    <div class="grid x3 indent1"><a href="./example.images.html"><img src="img/grid/example_egypt.jpg"></a></div>
+    <div class="grid x3"><a href="./example.moscow.html"><img src="img/grid/example_moscow.jpg"></a></div>
   </section>
   <hr>
   <section>
     <div class="story">
-      <h1>Plugins.</h1>
+      <h1>Plugins</h1>
       <p>Need more Styles? Load extra elements as extensions from Github. Watch this space - we will add more extensions soon. Leave your email to get notified - don't miss it!</p>
     </div>
     <div class="grid x2 indent1"><a href="https://github.com/johannesippen/magazinegrid/tree/master/src/extensions"><img src="img/grid/extension_pagination.png"></a></div>
@@ -383,7 +411,7 @@
       <h1>Get Started</h1>
     </div>
     <div class="grid x3 indent1">
-      <a href="http://cl.ly/0Z3Z030d1h0O" class="btn">Download</a><a href="https://github.com/johannesippen/magazinegrid/" class="btn">Github</a><small>It's FREE! Some Rights reserved. Examples included.</small>
+      <a href="http://cl.ly/0Z3Z030d1h0O" class="btn">Download</a><a href="https://github.com/johannesippen/magazinegrid/" class="btn">Github</a><small>It's FREE! Some Rights reserved. Examples included.<br> Looking for the <a href="./v1/">old MagazineGrid version</a>?</small>
     </div>
     <div class="grid x3">
       <form action="http://thanksalot.us3.list-manage.com/subscribe/post?u=830819cae8586f7478973cdf8&amp;id=fb74f80b31" method="post" class="subscribe">
@@ -399,5 +427,13 @@
     <p>2014</p>
   </section>
 </article>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-41425939-3', 'thanksalot.co');
+  ga('send', 'pageview');
+</script>
 </body>
 </html>
